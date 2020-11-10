@@ -32,11 +32,13 @@ class App extends React.Component {
     const pokemonFiltred = pokemons.filter((pokemon) => pokemon.type === type);
     if (type) {
       this.setState(() => ({
-        pokemonFiltro: pokemonFiltred
+        pokemonFiltro: pokemonFiltred,
+        pokemon: 0
       }))
     } else {
      this.setState(() => ({ 
-      pokemonFiltro: pokemons 
+      pokemonFiltro: pokemons,
+      pokemon: 0
     }));
     }
 
